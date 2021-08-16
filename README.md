@@ -10,4 +10,4 @@ R-MARKET acts as an intermediary between the cloud resources from the Computing 
 R-MARKET mixes two sets of interfaces: the low-level smart contracts APIs are used for critical operations (e.g., sending Request Orders), while high-level REST APIs are used for off-chain operations (e.g., querying the Order Book).
 
 
-![alt text](https://raw.githubusercontent.com/DataCloud-project/R-MARKET/docs/image-007.png)
+![alt text](https://raw.githubusercontent.com/DataCloud-project/R-MARKET/main/docs/image-007.png)
