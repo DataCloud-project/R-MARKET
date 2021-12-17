@@ -11,3 +11,8 @@ R-MARKET mixes two sets of interfaces: the low-level smart contracts APIs are us
 
 
 ![alt text](https://raw.githubusercontent.com/DataCloud-project/R-MARKET/main/docs/R-MARKET.png)
+
+## Some important components of R-MARKET tool
+
+1. SDK: The R-MARKET SDK is developed based on the iExec SDK. It is a CLI and a JS library that allows easy interactions with the iExec developed decentralized Marketplace in order to run off-chain computations. Follow the [link](https://github.com/DataCloud-project/R-MARKET_SDK) for more details.
+2. Worker: The Worker will be developed based on the iExec-Worker component, which is in charge of running computing tasks sent by requesters through the R-MARKET. For more details please visit the [link](https://github.com/DataCloud-project/R-MARKET_Worker)
