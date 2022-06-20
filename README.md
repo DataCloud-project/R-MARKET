@@ -22,3 +22,9 @@ R-MARKET mixes two sets of interfaces: the low-level smart contracts APIs are us
 6. Explorer: The R-MARKET Explorer is a web application which allows to explore a chain. This component based on one of the iExec stack's key component, which is famously known as [BlockScout](https://github.com/iExecBlockchainComputing/blockscout). For more technical details please follow the [link](https://github.com/DataCloud-project/R-MARKET_Explorer).
 7. All-in-One Blockchain Node: R-MARKET tool provides the blockchain-based decentralised marketplace for the resources. The Blockchain network has been developed based on the [Ethereum mainnet](https://ethereum.org/en/glossary/#mainnet) and inspired by the [iExec sidechain](https://v5.pools.iex.ec/pool/iexecblockchaincomputing/iexec_sidechain). Follow the [link](https://github.com/DataCloud-project/All-in-One_Blockchain) for more details.   
 8. Node.js Server: Entrypoint of the R-MARKET tool. The [Node.js server](https://github.com/DataCloud-project/R_MARKET_NodeJS) has four (4) different interfaces, which enables the connection between the R-MARKET tool and other pipeline tools, also it helps users to access the R-MARKET tool. 
+
+
+## Core development team
+
+* [Souvik Sengupta](https://github.com/ssgUPC)
+* [Anthony Simonet](https://github.com/asimonet)
