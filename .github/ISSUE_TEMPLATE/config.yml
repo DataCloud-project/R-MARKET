@@ -1,6 +1,6 @@
 blank_issues_enabled: true
 contact_links:
-  - name: SIM-PIPE issues
+  - name: R-MARKET issues
     url: https://github.com/DataCloud-project/R-MARKET/issues
     about: Please report any bugs and requests for features here.
   - name: DataCloud website

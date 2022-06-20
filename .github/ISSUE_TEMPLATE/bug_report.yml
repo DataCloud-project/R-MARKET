@@ -40,9 +40,9 @@ body:
     id: environment
     attributes:
       label: Environment
-      description: Please tell us about your environment. Include any relevant information on how you are running SIM-PIPE.
+      description: Please tell us about your environment. Include any relevant information on how you are running R-MARKET.
       value: |
-          - SIM-PIPE version:
+          - R-MARKET version:
           - Platform/OS:
           - Browser:
           - Other:
