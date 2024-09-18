@@ -28,8 +28,20 @@ services:
       - IEXEC_SCONE_CAS_PUBLIC_HOST=cas
       # SMS
       - IEXEC_SMS_IMAGE_LAS_IMAGE=registry.scontain.com:5050/scone-debug/iexec-las:5.2.1
+      - VIRTUAL_HOST=r-market.westeurope.cloudapp.azure.com
     ports:
       - ${SMS_PORT}:13300
     volumes:
       - iexec-integration-sms-scone-volume:/scone
     restart: unless-stopped
+
+  nginx-proxy:
+    image: nginx:latest
+    container_name: nginx-proxy-sms
+    ports:
+      - "13301:13301"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./certs:/etc/nginx/certs:ro
+    depends_on:
+      - sms

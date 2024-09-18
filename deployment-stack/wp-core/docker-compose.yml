@@ -165,4 +165,3 @@ services:
       - 13013:13013
     depends_on:
       - blockchain-adapter-mongo
-

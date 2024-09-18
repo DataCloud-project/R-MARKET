@@ -1,0 +1,19 @@
+{
+  "65535": {
+    "workerpoolorder": {
+      "requesterrestrict": "0x0000000000000000000000000000000000000000",
+      "datasetrestrict": "0x0000000000000000000000000000000000000000",
+      "apprestrict": "0x0000000000000000000000000000000000000000",
+      "trust": "0",
+      "category": "5",
+      "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "volume": "100000",
+      "hardwaredescription": "{\"max_bw\":0,\"min_bw\":0,\"max_ram\":4000,\"min_ram\":4000,\"max_cpu\":2,\"min_cpu\":2}",
+      "taskmaxduration": "86400",
+      "workerpoolprice": "0",
+      "workerpool": "0x274368637d2Dd612Cc3c3c07a2dC7De5B2415cF3",
+      "salt": "0xde671e286c4cb3568b35c9d0c83ae0fe310d14cbdc04ed94c8a6541824298640",
+      "sign": "0xace92c7f05fafc704015c57ebf2224a9a08dc079198397235d9f5b808f5c91f73a285f64b4da2187f0fb372910893678b565dafe3c2453013ada40f9b28860a41b"
+    }
+  }
+}

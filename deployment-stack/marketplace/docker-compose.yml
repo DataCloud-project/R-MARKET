@@ -19,7 +19,7 @@ services:
       - 6379:6379
 
   watcher:
-    image: iexechub/iexec-market-watcher:5.3.1
+    image: iexec-market-watcher:5.3.1
     restart: unless-stopped
     environment:
       - DEBUG=iexec-watcher*
@@ -36,7 +36,7 @@ services:
       - marketplace-mongo
 
   marketplace:
-    image: iexechub/iexec-market-api:5.3.1
+    image: iexec-market-api:5.3.1
     restart: unless-stopped
     ports:
       - 3000:3000
@@ -54,6 +54,18 @@ services:
       - RATE_LIMIT_MAX=10000000000000000000000000
       - RATE_LIMIT_PERIOD=60000
       - MAX_OPEN_ORDERS_PER_WALLET=1000
+      - VIRTUAL_HOST=r-market.westeurope.cloudapp.azure.com
     depends_on:
       - marketplace-redis
       - marketplace-mongo
+
+  nginx-proxy:
+    image: nginx:latest
+    container_name: nginx-proxy
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./certs:/etc/nginx/certs:ro
+    depends_on:
+      - marketplace
